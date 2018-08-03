@@ -24,7 +24,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
+import os
+if os.getenv('ENABLE_PLOTTING') is not None:
+    import matplotlib.pyplot as plt
 
 
 digs_dict = {1: 'F1D', 2: 'F2D', 3: 'F3D', 22: 'SD', -2: 'L2D'}

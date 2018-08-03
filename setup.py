@@ -12,6 +12,5 @@ setup(name='benford_py',
       install_requires=[
       	'pandas',
       	'numpy',
-      	'matplotlib',
       ],
       zip_safe=False)
